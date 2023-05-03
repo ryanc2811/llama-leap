@@ -1,0 +1,60 @@
+{
+    "id": "39016919-e84c-4812-852e-42c46bd2c7d0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 720,
+        "borderHeight": 1280
+    },
+    "displayList": [
+        {
+            "prefabId": "332fedb1-fcec-427e-af4b-c790c4d13162",
+            "id": "f6ac91b2-b201-4501-8c1c-3abc3b4cc176",
+            "unlock": [
+                "x",
+                "y",
+                "texture",
+                "scaleX",
+                "scaleY",
+                "body.velocity.x",
+                "body.velocity.y",
+                "body.offset.x",
+                "body.offset.y",
+                "radius",
+                "body.width",
+                "body.height"
+            ],
+            "label": "bird",
+            "components": [],
+            "texture": {
+                "key": "birds",
+                "frame": 0
+            },
+            "x": 0,
+            "y": 0,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "body.velocity.x": -100,
+            "body.velocity.y": 0,
+            "radius": 128,
+            "body.width": 362,
+            "body.height": 315,
+            "body.offset.x": 53,
+            "body.offset.y": 29.5,
+            "nestedPrefabs": [],
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

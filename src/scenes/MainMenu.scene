@@ -53,15 +53,7 @@
                                 "sceneKey"
                             ],
                             "label": "startSceneActionScript",
-                            "sceneKey": "Level",
-                            "components": [],
-                            "nestedPrefabs": [],
-                            "list": []
-                        },
-                        {
-                            "prefabId": "0e39177a-6e19-4b56-a7c2-2360a2e41505",
-                            "id": "f80827ac-e492-4baf-bdf3-d65a3c6f11ce",
-                            "label": "pushActionScript",
+                            "sceneKey": "Preload",
                             "components": [],
                             "nestedPrefabs": [],
                             "list": []

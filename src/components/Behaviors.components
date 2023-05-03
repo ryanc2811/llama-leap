@@ -1,5 +1,18 @@
 {
-    "components": [],
+    "components": [
+        {
+            "name": "Movement",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": []
+        },
+        {
+            "name": "OutOfBounds",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": []
+        }
+    ],
     "meta": {
         "app": "Phaser Editor 2D - User Components Editor",
         "url": "https://phasereditor2d.com",

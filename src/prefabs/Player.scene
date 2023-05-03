@@ -13,27 +13,25 @@
     },
     "displayList": [
         {
-            "type": "Container",
-            "id": "911580e5-a839-415e-b75b-c828245ac7dc",
-            "label": "container_1",
+            "type": "Sprite",
+            "id": "fc1efd76-c048-478c-a4b3-b45af9b89095",
+            "label": "player",
             "components": [],
-            "list": [
-                {
-                    "type": "Sprite",
-                    "id": "fc1efd76-c048-478c-a4b3-b45af9b89095",
-                    "label": "player",
-                    "components": [],
-                    "texture": {
-                        "key": "llama"
-                    },
-                    "scaleX": 0.5,
-                    "scaleY": 0.5,
-                    "ArcadeComponent.active": true,
-                    "body.width": 254,
-                    "body.height": 338,
-                    "list": []
-                }
-            ]
+            "texture": {
+                "key": "llama"
+            },
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "ArcadeComponent.active": true,
+            "body.gravity.y": 500,
+            "collideWorldBounds": true,
+            "pushable": false,
+            "radius": 100,
+            "body.width": 179,
+            "body.height": 271,
+            "body.offset.x": 37.5,
+            "body.offset.y": 33.5,
+            "list": []
         }
     ],
     "plainObjects": [
@@ -53,5 +51,27 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "jumpVelocity",
+            "label": "Jump Velocity",
+            "tooltip": "How much force to apply to player jump",
+            "defValue": -300,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "defaultGravity",
+            "label": "Default Gravity",
+            "tooltip": "The default gravity of the player",
+            "defValue": 500,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
 }

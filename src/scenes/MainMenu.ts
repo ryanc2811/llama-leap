@@ -6,7 +6,6 @@
 import Phaser from "phaser";
 import OnPointerDownScript from "../script-nodes-basic/OnPointerDownScript";
 import StartSceneActionScript from "../script-nodes-basic/StartSceneActionScript";
-import PushActionScript from "../script-nodes/PushActionScript";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -40,11 +39,8 @@ export default class MainMenu extends Phaser.Scene {
 		// startSceneActionScript
 		const startSceneActionScript = new StartSceneActionScript(onPointerDownScript);
 
-		// pushActionScript
-		new PushActionScript(onPointerDownScript);
-
 		// startSceneActionScript (prefab fields)
-		startSceneActionScript.sceneKey = "Level";
+		startSceneActionScript.sceneKey = "Preload";
 
 		this.events.emit("scene-awake");
 	}

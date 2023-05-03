@@ -11,12 +11,58 @@
         "borderWidth": 720,
         "borderHeight": 1280
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "prefabId": "0c1996e6-6be5-473d-b8b4-0a7ea37bf82e",
+            "id": "3d4f35cb-d030-45e4-a988-50e4c466603a",
+            "unlock": [
+                "x",
+                "y",
+                "mass"
+            ],
+            "label": "player",
+            "scope": "CLASS",
+            "components": [
+                "Movement"
+            ],
+            "x": 385,
+            "y": 1164,
+            "mass": 1,
+            "nestedPrefabs": [],
+            "list": []
+        },
+        {
+            "type": "Layer",
+            "id": "e846bf18-61d4-4488-bb19-b558c90effef",
+            "label": "enemyLayer",
+            "components": [],
+            "allowAppendChildren": true,
+            "list": []
+        },
+        {
+            "prefabId": "277de064-af80-4c6d-8ff2-7d5482fab56f",
+            "id": "7a5552f2-c56d-47a2-970f-978abd58c9b1",
+            "label": "gameplayScript",
+            "components": [],
+            "nestedPrefabs": [],
+            "list": []
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "c0699d82-8134-4385-aa1e-ca7bf17185b6",
+            "label": "enemies",
+            "objectIds": [
+                "985fc73e-64f5-4556-b99a-8c83e47c9b5c",
+                "6a4083df-44da-4abe-bb44-a82bf1d2dd7c"
+            ]
+        }
+    ]
 }

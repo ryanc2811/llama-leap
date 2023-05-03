@@ -1,0 +1,69 @@
+{
+    "id": "818e36e4-f3f9-46bd-8ed4-440c9ad72571",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 720,
+        "borderHeight": 1280
+    },
+    "displayList": [
+        {
+            "prefabId": "332fedb1-fcec-427e-af4b-c790c4d13162",
+            "id": "e1c3f540-b6ed-4506-afc6-d5ad176fd169",
+            "unlock": [
+                "x",
+                "y",
+                "texture",
+                "flipX",
+                "flipY",
+                "scaleX",
+                "scaleY",
+                "body.bounce.x",
+                "body.bounce.y",
+                "body.offset.x",
+                "body.offset.y",
+                "body.width",
+                "body.height",
+                "radius",
+                "body.velocity.x",
+                "body.velocity.y",
+                "pushable"
+            ],
+            "label": "pencil",
+            "components": [],
+            "texture": {
+                "key": "FufuSuperDino"
+            },
+            "x": 627,
+            "y": 667,
+            "scaleX": 0.5,
+            "scaleY": 0.5,
+            "flipX": true,
+            "flipY": false,
+            "body.velocity.x": -50,
+            "body.velocity.y": 0,
+            "body.bounce.x": 1,
+            "body.bounce.y": 1,
+            "pushable": true,
+            "radius": 100,
+            "body.width": 250,
+            "body.height": 250,
+            "body.offset.x": 25,
+            "body.offset.y": 25,
+            "nestedPrefabs": [],
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
