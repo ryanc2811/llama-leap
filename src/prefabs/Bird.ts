@@ -4,10 +4,8 @@
 /* START OF COMPILED CODE */
 
 import Enemy from "./Enemy";
-import Pencil from "./Pencil";
-import Player from "./Player";
 /* START-USER-IMPORTS */
-
+import Player from "./Player";
 /* END-USER-IMPORTS */
 
 export default class Bird extends Enemy {
@@ -57,8 +55,8 @@ export default class Bird extends Enemy {
 		if(other instanceof Player){
 			this.scene.events.emit('gameOver');
 		}
-		
-		
+
+
 	}
 	/* END-USER-CODE */
 }

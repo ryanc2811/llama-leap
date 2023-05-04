@@ -36,7 +36,7 @@ export default class OutOfBounds {
 			this.gameObject.emit('outOfBounds', this.gameObject);
 
 		}
-		
+
 		if(this.gameObject.y-this.gameObject.displayHeight > this.scene.scale.height){
 			this.gameObject.emit('outOfBounds', this.gameObject);
 			console.log("BYE");

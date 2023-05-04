@@ -20,6 +20,11 @@
                 "key": "birds"
             },
             {
+                "url": "assets/coin.png",
+                "type": "image",
+                "key": "coin"
+            },
+            {
                 "url": "assets/FufuSuperDino.png",
                 "type": "image",
                 "key": "FufuSuperDino"

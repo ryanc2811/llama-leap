@@ -1,0 +1,68 @@
+{
+    "id": "b656fc1f-28a1-4a2e-8307-b47ae3e0cdc6",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 720,
+        "borderHeight": 1280
+    },
+    "displayList": [
+        {
+            "prefabId": "5e746613-c01a-42aa-8681-4950bb2f23ce",
+            "id": "7aaa9c74-5414-4f79-8047-e77454ce9d77",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "pullToTarget",
+            "components": [],
+            "nestedPrefabs": [],
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "prefabProperties": [
+        {
+            "name": "target",
+            "label": "Target Object",
+            "tooltip": "The object to follow",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Image|Phaser.GameObjects.Container|Phaser.GameObjects.Sprite"
+            }
+        },
+        {
+            "name": "attractionDistance",
+            "label": "Distance to Start Follow",
+            "tooltip": "How Far should the target follow from",
+            "defValue": 250,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        },
+        {
+            "name": "pullForce",
+            "label": "Pull Force number",
+            "tooltip": "The Force at which the object shall pull towards object",
+            "defValue": 200,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}

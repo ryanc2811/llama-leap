@@ -41,6 +41,35 @@
             "list": []
         },
         {
+            "type": "Layer",
+            "id": "94a86849-52c4-4a5e-abe7-7d9131c6a57e",
+            "label": "uiLayer",
+            "components": [],
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "0d0e2734-ad3a-4855-94d9-df16f3771066",
+                    "label": "scoreTxt",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": 89,
+                    "y": 47,
+                    "text": "Score : 0",
+                    "fontFamily": "Lato",
+                    "fontSize": "32px",
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Layer",
+            "id": "91d7a238-2d25-49b5-8c0c-fa725e742e3e",
+            "label": "pickupsLayer",
+            "scope": "CLASS",
+            "components": [],
+            "list": []
+        },
+        {
             "prefabId": "277de064-af80-4c6d-8ff2-7d5482fab56f",
             "id": "7a5552f2-c56d-47a2-970f-978abd58c9b1",
             "label": "gameplayScript",
@@ -64,6 +93,10 @@
                 "985fc73e-64f5-4556-b99a-8c83e47c9b5c",
                 "6a4083df-44da-4abe-bb44-a82bf1d2dd7c"
             ]
+        },
+        {
+            "id": "275b5f81-74f2-49cc-af33-43aee013e801",
+            "label": "pickups"
         }
     ]
 }

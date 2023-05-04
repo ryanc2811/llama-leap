@@ -4,8 +4,8 @@
 /* START OF COMPILED CODE */
 
 import Enemy from "./Enemy";
-import Player from "./Player";
 /* START-USER-IMPORTS */
+import Player from "./Player";
 /* END-USER-IMPORTS */
 
 export default class Pencil extends Enemy {
@@ -32,7 +32,7 @@ export default class Pencil extends Enemy {
 
 	/* START-USER-CODE */
 
-	
+
 	public async handleCollision(other:any){
 
 		if(other instanceof Player){
@@ -61,7 +61,7 @@ export default class Pencil extends Enemy {
 			}
 
 		}
-		
+
 	}
 
 	/* END-USER-CODE */
