@@ -35,6 +35,7 @@
             "type": "Layer",
             "id": "e846bf18-61d4-4488-bb19-b558c90effef",
             "label": "enemyLayer",
+            "scope": "CLASS",
             "components": [],
             "allowAppendChildren": true,
             "list": []

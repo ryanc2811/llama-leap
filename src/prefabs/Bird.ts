@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import Enemy from "./Enemy";
+import Pencil from "./Pencil";
 import Player from "./Player";
 /* START-USER-IMPORTS */
 
@@ -40,8 +41,23 @@ export default class Bird extends Enemy {
 
 		// sound
 	}
-	public handleCollision(player:Player){
-		this.scene.events.emit('gameOver');
+	public async handleCollision(other:any){
+
+		if(other instanceof Enemy){
+			const pencil= other as Enemy;
+			if (pencil.body.velocity.y>500) {
+				await this.emit('destroyed', this);
+				this.destroy();
+
+				// Add any additional logic here, such as updating the score
+			}
+
+		}
+
+		if(other instanceof Player){
+			this.scene.events.emit('gameOver');
+		}
+		
 		
 	}
 	/* END-USER-CODE */

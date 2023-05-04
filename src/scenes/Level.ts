@@ -11,6 +11,7 @@ import GameplayScript from "../script-nodes/GameplayScript";
 import OutOfBounds from "../components/OutOfBounds";
 import Bird from "../prefabs/Bird";
 import Pencil from "../prefabs/Pencil";
+import Enemy from "../prefabs/Enemy";
 /* END-USER-IMPORTS */
 
 export default class Level extends Phaser.Scene {
@@ -30,7 +31,7 @@ export default class Level extends Phaser.Scene {
 		player.body.mass = 1;
 
 		// enemyLayer
-		this.add.layer();
+		const enemyLayer = this.add.layer();
 
 		// gameplayScript
 		new GameplayScript(this);
@@ -42,12 +43,14 @@ export default class Level extends Phaser.Scene {
 		new Movement(player);
 
 		this.player = player;
+		this.enemyLayer = enemyLayer;
 		this.enemies = enemies;
 
 		this.events.emit("scene-awake");
 	}
 
 	private player!: Player;
+	private enemyLayer!: Phaser.GameObjects.Layer;
 	private enemies!: Array<any>;
 
 	/* START-USER-CODE */
@@ -61,6 +64,8 @@ export default class Level extends Phaser.Scene {
         this.spawnEnemyLoop();
 		// Add overlap detection between the player and the enemies
 		this.physics.add.overlap(this.player, this.enemies, this.playerVsEnemy, undefined, this);
+		// Add overlap detection between the player and the enemies
+		this.physics.add.overlap(this.enemies, this.enemies, this.enemyVsEnemy, undefined, this);
 	}
 	update(time: number, delta: number) {
 
@@ -68,8 +73,7 @@ export default class Level extends Phaser.Scene {
 	private handleEnemyOutOfBounds(enemy: Phaser.GameObjects.Sprite): void {
         // Remove the enemy from the scene
         enemy.destroy();
-        // Remove the enemy from the enemies array
-        this.enemies.splice(this.enemies.indexOf(enemy as any), 1);
+		this.removeEnemy(enemy as Enemy);
     }
 	private playerVsEnemy(player: any, enemy: any): void {
 		// Handle the collision between the player and the enemy here
@@ -77,7 +81,12 @@ export default class Level extends Phaser.Scene {
 		enemy.handleCollision(player);
 
 	}
+	private enemyVsEnemy(enemy1: any, enemy2: any): void {
+		// Handle the collision between the player and the enemy here
 
+		enemy1.handleCollision(enemy2);
+		enemy2.handleCollision(enemy1);
+	}
 
 	private handleGameOver(): void {
 		// Handle the game over logic here, for example:
@@ -103,6 +112,10 @@ export default class Level extends Phaser.Scene {
 			callbackScope: this,
 		});
 	}
+	private removeEnemy(enemy :Enemy):void {
+		this.enemyLayer.remove(enemy);
+		this.enemies.splice(this.enemies.indexOf(enemy), 1);
+	}
 	private spawnEnemy(): void {
 			// Randomly choose an enemy type
 			const enemyTypes = [Bird, Pencil];
@@ -118,9 +131,12 @@ export default class Level extends Phaser.Scene {
 			this.add.existing(enemy);
 
 			// Attach the OutOfBounds component and listen for the 'outOfBounds' event
-			const outOfBounds=new OutOfBounds(enemy);
+			new OutOfBounds(enemy);
 			enemy.once('outOfBounds', this.handleEnemyOutOfBounds, this);
-
+			this.enemyLayer.add(enemy);
+			enemy.once('destroyed', (destroyedEnemy: Enemy) => {
+				this.removeEnemy(destroyedEnemy);
+			});
 			// Add the enemy to the enemies array
 			this.enemies.push(enemy);
 		}
