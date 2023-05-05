@@ -32,9 +32,10 @@ export default class Pencil extends Enemy {
 
 	/* START-USER-CODE */
 
+	
 
-	public async handleCollision(other:any){
-
+	public handleCollision(other:any){
+		console.log('Pencil collision with', other);
 		if(other instanceof Player){
 			const player= other as Player;
 			// Check if the player is on top of the pencil, taking into account the buffer
@@ -54,9 +55,7 @@ export default class Pencil extends Enemy {
 		if(other instanceof Enemy){
 			const pencil= other as Enemy;
 			if (pencil.body.velocity.y>500) {
-				await this.emit('destroyed', this)
-				this.destroy();
-				;
+				this.emit('destroyed', this);
 				// Add any additional logic here, such as updating the score
 			}
 

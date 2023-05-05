@@ -26,7 +26,7 @@ export default class PickupItem extends Phaser.GameObjects.Sprite {
 		this.body.setCircle(95);
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+
 		/* END-USER-CTR-CODE */
 	}
 

@@ -30,20 +30,24 @@ export default class OutOfBounds {
 	private scene:Phaser.Scene;
 
 	update() {
-        // Check if the enemy has gone out of the screen bounds on the left or below the screen
+		// Check if the enemy has gone out of the screen bounds on the left or below the screen
 		if (this.gameObject.x + this.gameObject.displayWidth < 0 ) {
 			// Emit an event when the enemy goes out of bounds
 			this.gameObject.emit('outOfBounds', this.gameObject);
-
+			this.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);
 		}
-
+	
 		if(this.gameObject.y-this.gameObject.displayHeight > this.scene.scale.height){
 			this.gameObject.emit('outOfBounds', this.gameObject);
+			this.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);
 			console.log("BYE");
 		}
-
-    }
-
+	}
+	
+	reset() {
+		this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
+		this.gameObject.once('destroy', this.onDestroy, this);
+	}
 	// Add a method to handle the 'destroy' event
     private onDestroy(): void {
         this.gameObject.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);

@@ -27,8 +27,14 @@ export default class Enemy extends Phaser.GameObjects.Sprite {
 
 	/* START-USER-CODE */
 
-	// Write your code here.
+	handleCollision(other: Phaser.GameObjects.Sprite): void {
+        // Add the desired collision handling behavior here
+        //console.log(`Collision between ${this.constructor.name} and ${other.constructor.name}`);
+    }
 
+	reset(){
+		this.body.setVelocityY(0);
+	}
 	/* END-USER-CODE */
 }
 

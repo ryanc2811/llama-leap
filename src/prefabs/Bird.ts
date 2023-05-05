@@ -39,13 +39,13 @@ export default class Bird extends Enemy {
 
 		// sound
 	}
-	public async handleCollision(other:any){
-
+	public handleCollision(other:any){
+		console.log('Bird collision with', other);
 		if(other instanceof Enemy){
 			const pencil= other as Enemy;
 			if (pencil.body.velocity.y>500) {
-				await this.emit('destroyed', this);
-				this.destroy();
+				this.emit('destroyed', this);
+		
 
 				// Add any additional logic here, such as updating the score
 			}
@@ -58,6 +58,8 @@ export default class Bird extends Enemy {
 
 
 	}
+
+	
 	/* END-USER-CODE */
 }
 
