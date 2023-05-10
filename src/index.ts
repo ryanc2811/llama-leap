@@ -3,6 +3,8 @@ import Level from "./scenes/Level";
 import MainMenu from "./scenes/MainMenu";
 import preloadAssetPackUrl from "../static/assets/preload-asset-pack.json";
 import Preload from "./scenes/Preload";
+import GameOver from "./scenes/GameOver";
+
 
 class Boot extends Phaser.Scene {
 
@@ -38,7 +40,7 @@ window.addEventListener('load', function () {
 				}
 			}
 		},
-		scene: [Boot, Preload,MainMenu, Level]
+		scene: [Boot, Preload,MainMenu, Level,GameOver]
 	});
 
 	game.scene.start("Boot");

@@ -25,6 +25,7 @@ export default class Level extends Phaser.Scene {
 		super("Level");
 
 		/* START-USER-CTR-CODE */
+		
 		/* END-USER-CTR-CODE */
 	}
 
@@ -159,7 +160,7 @@ export default class Level extends Phaser.Scene {
 		// - Update highscore
 		this.gameplayScript.updateHighScore();
 		// - Restart the level
-		this.scene.start("MainMenu");
+		this.scene.start("GameOver");
 	}
 	private spawnEnemyLoop(): void {
 		// Calculate a random time interval for spawning enemies (in milliseconds)

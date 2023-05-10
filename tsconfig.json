@@ -11,8 +11,9 @@
 		"sourceMap": true,
 		"baseUrl": "./src",
 		"paths": {
-		  "~/*": ["./*"]
-		},
+			"~/*": ["./*"],
+			"*": ["node_modules/*"]
+		  },
         "outDir": "./dist",
 		"typeRoots": [
 			"node_modules/@types",
