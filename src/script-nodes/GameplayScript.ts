@@ -26,8 +26,11 @@ export default class GameplayScript extends ScriptNode {
 		/* END-USER-CTR-CODE */
 	}
 
-	/* START-USER-CODE */
+	public scoreTxt!: Phaser.GameObjects.Text;
+	public highScoreTxt!: Phaser.GameObjects.Text;
 
+	/* START-USER-CODE */
+	private score:number=0;
 	private togglePause() {
 
 		this.setPaused(!this.isPaused());
@@ -44,14 +47,61 @@ export default class GameplayScript extends ScriptNode {
 		this.scene.physics.world.isPaused = paused;
 	}
 
-	protected override update(): void {
+
+	public updateGameplay(time:number, delta: number) {
 
 		if (this.isPaused()) {
 
 			return;
 		}
 
+		this.updateScore(delta);
 
+	}
+
+	public saveHighScore(score:number) {
+		// Convert the score to a string before storing it
+		const scoreString = score.toString();
+
+		// Save the score to localStorage with the key 'highScore'
+		localStorage.setItem('highScore', scoreString);
+	}
+	public getHighScore(): number {
+	// Get the high score from localStorage with the key 'highScore'
+	const highScoreString = localStorage.getItem('highScore');
+	
+	// If there is no high score saved, return 0
+	if (!highScoreString) {
+		return 0;
+	}
+
+	// Convert the high score string to a number and return it
+	return parseInt(highScoreString, 10);
+	}
+
+	public updateHighScore() {
+		// Get the current high score
+		const currentHighScore = this.getHighScore();
+		this.highScoreTxt.setText(`High Score: ${Math.floor(currentHighScore)}`);
+		// Check if the new score is higher than the current high score
+		if (this.score > currentHighScore) {
+			// If it is, save the new score as the high score
+			this.saveHighScore(this.score);
+		}
+	}
+
+	private updateScore(delta: number): void {
+
+		// Increment the score based on the elapsed time
+		this.score += delta * 0.01; // You can adjust the multiplier to control the rate at which the score increases
+		this.scoreTxt.setText(`Score: ${Math.floor(this.score)}`);
+	}
+	protected start(): void {
+		this.score=0;
+	}
+	public increaseScore(increaseValue:number){
+		this.score+=increaseValue;
+		this.scoreTxt.setText(`Score: ${Math.floor(this.score)}`);
 	}
 	/* END-USER-CODE */
 }

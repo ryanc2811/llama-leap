@@ -26,5 +26,18 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "gameManager",
+            "label": "Game Manager",
+            "tooltip": "Manages the Game properties",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "constructor",
+                "expressionType": "GameplayScript"
+            }
+        }
+    ]
 }

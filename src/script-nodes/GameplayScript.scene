@@ -26,5 +26,29 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "scoreTxt",
+            "label": "scoreTxt",
+            "tooltip": "UI For score",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Text"
+            }
+        },
+        {
+            "name": "highScoreTxt",
+            "label": "High Score Text",
+            "tooltip": "High Score Text Object",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Text"
+            }
+        }
+    ]
 }

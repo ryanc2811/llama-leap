@@ -26,17 +26,11 @@ export default class Player extends Phaser.GameObjects.Sprite {
 		this.body.setOffset(37.5, 33.5);
 		this.body.setSize(179, 271, false);
 
-		// enemyCollider
-		const enemyCollider = scene.physics.add.overlap(this, [], this.playerVsEnemy, undefined, this);
-
-		this.enemyCollider = enemyCollider;
-
 		/* START-USER-CTR-CODE */
 
 		/* END-USER-CTR-CODE */
 	}
 
-	private enemyCollider: Phaser.Physics.Arcade.Collider;
 	public jumpVelocity: number = -300;
 	public defaultGravity: number = 500;
 

@@ -39,7 +39,7 @@
             "y": 0,
             "scaleX": 0.3,
             "scaleY": 0.3,
-            "body.velocity.x": -100,
+            "body.velocity.x": -200,
             "body.velocity.y": 0,
             "radius": 128,
             "body.width": 362,

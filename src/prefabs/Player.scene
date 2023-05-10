@@ -34,18 +34,7 @@
             "list": []
         }
     ],
-    "plainObjects": [
-        {
-            "id": "8028d35d-fd67-49af-93ba-16a5223b4d33",
-            "type": "Collider",
-            "label": "enemyCollider",
-            "object1": "this",
-            "object2": "[]",
-            "overlapOnly": true,
-            "collideCallback": "this.playerVsEnemy",
-            "callbackContext": "this"
-        }
-    ],
+    "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",

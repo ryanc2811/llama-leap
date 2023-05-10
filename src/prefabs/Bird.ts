@@ -15,7 +15,7 @@ export default class Bird extends Enemy {
 
 		this.scaleX = 0.3;
 		this.scaleY = 0.3;
-		this.body.velocity.x = -100;
+		this.body.velocity.x = -200;
 		this.body.velocity.y = 0;
 		this.body.setOffset(53, 29.5);
 		this.body.setCircle(128);
@@ -45,7 +45,7 @@ export default class Bird extends Enemy {
 			const pencil= other as Enemy;
 			if (pencil.body.velocity.y>500) {
 				this.emit('destroyed', this);
-		
+
 
 				// Add any additional logic here, such as updating the score
 			}
@@ -59,7 +59,7 @@ export default class Bird extends Enemy {
 
 	}
 
-	
+
 	/* END-USER-CODE */
 }
 

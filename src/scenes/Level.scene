@@ -13,6 +13,61 @@
     },
     "displayList": [
         {
+            "type": "Layer",
+            "id": "94a86849-52c4-4a5e-abe7-7d9131c6a57e",
+            "label": "uiLayer",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "64fca6f0-c5d1-49a6-8631-f2fd1762526c",
+                    "label": "background",
+                    "components": [],
+                    "texture": {
+                        "key": "game-background"
+                    },
+                    "x": 371,
+                    "y": 646,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "0d0e2734-ad3a-4855-94d9-df16f3771066",
+                    "label": "scoreTxt",
+                    "components": [],
+                    "x": 89,
+                    "y": 47,
+                    "text": "Score : 0",
+                    "fontFamily": "Lato",
+                    "fontSize": "32px",
+                    "color": "#2a2626ff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "b585397d-66c4-4d8c-acd9-16d012ac87ec",
+                    "label": "highScoreTxt",
+                    "components": [],
+                    "x": 430,
+                    "y": 47,
+                    "text": "High Score : 0",
+                    "fontFamily": "Lato",
+                    "fontSize": "32px",
+                    "color": "#2a2626ff",
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Layer",
+            "id": "e846bf18-61d4-4488-bb19-b558c90effef",
+            "label": "enemyLayer",
+            "scope": "CLASS",
+            "components": [],
+            "allowAppendChildren": true,
+            "list": []
+        },
+        {
             "prefabId": "0c1996e6-6be5-473d-b8b4-0a7ea37bf82e",
             "id": "3d4f35cb-d030-45e4-a988-50e4c466603a",
             "unlock": [
@@ -33,36 +88,6 @@
         },
         {
             "type": "Layer",
-            "id": "e846bf18-61d4-4488-bb19-b558c90effef",
-            "label": "enemyLayer",
-            "scope": "CLASS",
-            "components": [],
-            "allowAppendChildren": true,
-            "list": []
-        },
-        {
-            "type": "Layer",
-            "id": "94a86849-52c4-4a5e-abe7-7d9131c6a57e",
-            "label": "uiLayer",
-            "components": [],
-            "list": [
-                {
-                    "type": "Text",
-                    "id": "0d0e2734-ad3a-4855-94d9-df16f3771066",
-                    "label": "scoreTxt",
-                    "scope": "CLASS",
-                    "components": [],
-                    "x": 89,
-                    "y": 47,
-                    "text": "Score : 0",
-                    "fontFamily": "Lato",
-                    "fontSize": "32px",
-                    "list": []
-                }
-            ]
-        },
-        {
-            "type": "Layer",
             "id": "91d7a238-2d25-49b5-8c0c-fa725e742e3e",
             "label": "pickupsLayer",
             "scope": "CLASS",
@@ -72,31 +97,58 @@
         {
             "prefabId": "277de064-af80-4c6d-8ff2-7d5482fab56f",
             "id": "7a5552f2-c56d-47a2-970f-978abd58c9b1",
+            "unlock": [
+                "scoreTxt",
+                "highScoreTxt"
+            ],
             "label": "gameplayScript",
+            "scope": "CLASS",
+            "scoreTxt": "scoreTxt",
+            "highScoreTxt": "highScoreTxt",
             "components": [],
             "nestedPrefabs": [],
             "list": []
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "fb415fae-d59b-498d-8dc7-442b5e085c2a",
+            "type": "Collider",
+            "label": "playerVsEnemy",
+            "scope": "METHOD",
+            "object1": "player",
+            "object2": "enemyLayer.getChildren()",
+            "overlapOnly": true,
+            "collideCallback": "this.playerVsEnemy",
+            "callbackContext": "this"
+        },
+        {
+            "id": "30ef95b0-84e4-4f47-83ba-97dfeeab69e3",
+            "type": "Collider",
+            "label": "playerVsPickup",
+            "scope": "METHOD",
+            "object1": "player",
+            "object2": "pickupsLayer.getChildren()",
+            "overlapOnly": true,
+            "collideCallback": "this.playerVsPickup",
+            "callbackContext": "this"
+        },
+        {
+            "id": "50bc8875-1598-4295-b588-87af2edba80c",
+            "type": "Collider",
+            "label": "enemyVsEnemy",
+            "scope": "METHOD",
+            "object1": "enemyLayer.getChildren()",
+            "object2": "enemyLayer.getChildren()",
+            "overlapOnly": true,
+            "collideCallback": "this.enemyVsEnemy",
+            "callbackContext": "this"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    },
-    "lists": [
-        {
-            "id": "c0699d82-8134-4385-aa1e-ca7bf17185b6",
-            "label": "enemies",
-            "objectIds": [
-                "985fc73e-64f5-4556-b99a-8c83e47c9b5c",
-                "6a4083df-44da-4abe-bb44-a82bf1d2dd7c"
-            ]
-        },
-        {
-            "id": "275b5f81-74f2-49cc-af33-43aee013e801",
-            "label": "pickups"
-        }
-    ]
+    }
 }

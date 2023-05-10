@@ -11,28 +11,29 @@ import Player from "./Player";
 export default class Pencil extends Enemy {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 627, y ?? 667, texture || "FufuSuperDino", frame);
+		super(scene, x ?? 627, y ?? 667, texture || "pencil", frame);
 
-		this.scaleX = 0.5;
-		this.scaleY = 0.5;
-		this.flipX = true;
+		this.scaleX = 0.2;
+		this.scaleY = 0.2;
+		this.flipX = false;
 		this.flipY = false;
-		this.body.velocity.x = -50;
+		this.body.velocity.x = 0;
 		this.body.velocity.y = 0;
-		this.body.bounce.x = 1;
-		this.body.bounce.y = 1;
+		this.body.bounce.x = 0;
+		this.body.bounce.y = 0;
 		this.body.pushable = true;
-		this.body.setOffset(25, 25);
-		this.body.setCircle(100);
+		this.body.setOffset(0, 0);
+		this.body.setCircle(64);
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		// Set collider for the Pencil
+  		this.setCollider('box', { width: this.width, height: this.height });
 		/* END-USER-CTR-CODE */
 	}
 
 	/* START-USER-CODE */
 
-	
+
 
 	public handleCollision(other:any){
 		console.log('Pencil collision with', other);

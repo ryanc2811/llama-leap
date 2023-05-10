@@ -37,5 +37,17 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "speed",
+            "label": "Pickup speed",
+            "tooltip": "How fast a pickup will move",
+            "defValue": -100,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
 }

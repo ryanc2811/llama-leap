@@ -14,10 +14,12 @@
     "displayList": [
         {
             "type": "Sprite",
-            "id": "84bd5124-4d17-49ad-92bf-6a42105ced5f",
+            "id": "6833703f-112a-4a90-bf9e-d2ab238c878b",
             "label": "enemy",
             "components": [],
             "texture": {},
+            "x": 6,
+            "y": 61,
             "ArcadeComponent.active": true,
             "bodyGeometry": 0,
             "body.width": 128,
@@ -31,5 +33,17 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "prefabProperties": [
+        {
+            "name": "speed",
+            "label": "Enemy Speed",
+            "tooltip": "How fast an enemy will move",
+            "defValue": -100,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
 }

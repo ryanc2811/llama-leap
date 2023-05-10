@@ -8,6 +8,7 @@ import Phaser from "phaser";
 /* START-USER-IMPORTS */
 import Player from "../prefabs/Player";
 import PickupItem from "../prefabs/PickupItem";
+import GameplayScript from "./GameplayScript";
 /* END-USER-IMPORTS */
 
 export default class PickupBehaviour extends ScriptNode {
@@ -19,6 +20,8 @@ export default class PickupBehaviour extends ScriptNode {
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
+
+	
 
 	/* START-USER-CODE */
 

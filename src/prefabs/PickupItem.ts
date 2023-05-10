@@ -26,20 +26,26 @@ export default class PickupItem extends Phaser.GameObjects.Sprite {
 		this.body.setCircle(95);
 
 		/* START-USER-CTR-CODE */
+		this.body.setVelocityX(this.speed);
 
 		/* END-USER-CTR-CODE */
 	}
+
+	public speed: number = -100;
 
 	/* START-USER-CODE */
 
 	private behaviour!:PickupBehaviour;
 
-	
+
 
 	attachBehaviour(behaviour: PickupBehaviour): void {
     this.behaviour = behaviour;
   }
-
+  setSpeed(pSpeed:number){
+	this.speed=pSpeed;
+	this.body.setVelocityX(this.speed);
+	}
   onPickup(player: Player): void {
     if (this.behaviour) {
       this.behaviour.onPickup(player, this);

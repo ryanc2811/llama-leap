@@ -1,0 +1,203 @@
+{
+    "id": "e458080c-617a-432e-bcc9-5e79ce611e75",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "GameOver",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 720,
+        "borderHeight": 1280
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "14093e38-3ca7-4333-8283-53f6ca9ec4dd",
+            "label": "container_1",
+            "components": [],
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "a3b9f50a-2fe9-44a3-8905-9ee6f2b8ab6d",
+                    "label": "rectangle_3",
+                    "components": [],
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "width": 720,
+                    "height": 1280,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "edf9d37f-3813-4dbc-adb4-759daba3755e",
+                    "label": "text_1",
+                    "components": [],
+                    "x": 69,
+                    "y": 294,
+                    "text": "GAME OVER!",
+                    "fontFamily": "Lato",
+                    "fontSize": "100px",
+                    "color": "#212F60",
+                    "list": []
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "a0bc4841-2a46-4aee-9884-10b253f70696",
+                    "label": "rectangle_1",
+                    "components": [],
+                    "y": 406.5,
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#84B5FF",
+                    "width": 680,
+                    "height": 25,
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "88a8ad62-209a-445f-89bc-d8a970000188",
+                    "label": "container_2",
+                    "components": [],
+                    "y": 555,
+                    "list": [
+                        {
+                            "type": "Rectangle",
+                            "id": "e59b4348-9294-4c13-ba5d-db31a1e6fa0f",
+                            "label": "rectangle_2",
+                            "components": [],
+                            "originX": 0,
+                            "originY": 0,
+                            "isFilled": true,
+                            "fillColor": "212F60",
+                            "width": 720,
+                            "height": 150,
+                            "list": []
+                        },
+                        {
+                            "type": "Container",
+                            "id": "0b60ae12-8f15-4728-b529-289ea25e1a35",
+                            "label": "container_3",
+                            "components": [],
+                            "x": 35,
+                            "y": 50,
+                            "list": [
+                                {
+                                    "type": "Container",
+                                    "id": "4fd65a6d-4528-4974-8d2b-3cc6b2cc7a56",
+                                    "label": "container_4",
+                                    "components": [],
+                                    "y": -30,
+                                    "list": [
+                                        {
+                                            "type": "Rectangle",
+                                            "id": "ac5db4a0-88cb-47b9-8abb-a0daae292f9a",
+                                            "label": "rectangle_4",
+                                            "components": [],
+                                            "originX": 0,
+                                            "originY": 0,
+                                            "strokeColor": "#FFA361",
+                                            "lineWidth": 3,
+                                            "isStroked": true,
+                                            "width": 200,
+                                            "height": 100,
+                                            "list": []
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "id": "4a499cb9-08ec-4347-9020-34ca8e443bba",
+                                            "label": "text_2",
+                                            "components": [],
+                                            "x": 74,
+                                            "y": 18,
+                                            "text": "Score:",
+                                            "list": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Container",
+                                    "id": "bac44ddc-a795-43b3-ae42-f4f614babb3e",
+                                    "label": "container",
+                                    "components": [],
+                                    "x": 225,
+                                    "y": -31,
+                                    "list": [
+                                        {
+                                            "type": "Rectangle",
+                                            "id": "381d42a0-7c7b-4009-a754-4dc1f7eff876",
+                                            "label": "rectangle_4",
+                                            "components": [],
+                                            "originX": 0,
+                                            "originY": 0,
+                                            "strokeColor": "#FFA361",
+                                            "lineWidth": 3,
+                                            "isStroked": true,
+                                            "width": 200,
+                                            "height": 100,
+                                            "list": []
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "id": "b9ac41a7-4018-435a-b5ce-7f81d46ac6f3",
+                                            "label": "text_2",
+                                            "components": [],
+                                            "x": 60,
+                                            "y": 16,
+                                            "text": "Ranking:",
+                                            "list": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Container",
+                                    "id": "7fb4f103-d299-4146-b39b-db51eb94da65",
+                                    "label": "container_5",
+                                    "components": [],
+                                    "x": 450,
+                                    "y": -33,
+                                    "list": [
+                                        {
+                                            "type": "Rectangle",
+                                            "id": "fed8cd2c-5460-48cb-b8c9-b4306acdb9f8",
+                                            "label": "rectangle_4",
+                                            "components": [],
+                                            "originX": 0,
+                                            "originY": 0,
+                                            "strokeColor": "#FFA361",
+                                            "lineWidth": 3,
+                                            "isStroked": true,
+                                            "width": 200,
+                                            "height": 100,
+                                            "list": []
+                                        },
+                                        {
+                                            "type": "Text",
+                                            "id": "36f28c19-29b2-4cc2-a942-d29a848b335b",
+                                            "label": "text_2",
+                                            "components": [],
+                                            "x": 45,
+                                            "y": 13,
+                                            "text": "High Score:",
+                                            "list": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
