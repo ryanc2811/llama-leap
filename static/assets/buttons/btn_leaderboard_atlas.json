@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "btn_leaderboard_atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 144,
+				"h": 577
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "btn_leaderboard_hover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 143
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 143
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 142,
+						"h": 143
+					}
+				},
+				{
+					"filename": "btn_leaderboard_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 142
+					},
+					"frame": {
+						"x": 1,
+						"y": 146,
+						"w": 142,
+						"h": 142
+					}
+				},
+				{
+					"filename": "btn_leaderboard_down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 142
+					},
+					"frame": {
+						"x": 1,
+						"y": 290,
+						"w": 142,
+						"h": 142
+					}
+				},
+				{
+					"filename": "btn_leaderboard_norm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 142
+					},
+					"frame": {
+						"x": 1,
+						"y": 434,
+						"w": 142,
+						"h": 142
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:23045974f8b40cf39ac903261b977f70:a77f28b1332c9f43d6614b56464e2e5a:e633f9c7df6ff3f551d28b5c0775d7dd$"
+	}
+}

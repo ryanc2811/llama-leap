@@ -25,6 +25,24 @@
                 "key": "birds"
             },
             {
+                "type": "multiatlas",
+                "url": "assets/buttons/btn_leaderboard_atlas.json",
+                "path": "assets/buttons",
+                "key": "btn_leaderboard_atlas"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/buttons/btn_menu_atlas.json",
+                "path": "assets/buttons",
+                "key": "btn_menu_atlas"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/buttons/btn_restart_atlas.json",
+                "path": "assets/buttons",
+                "key": "btn_restart_atlas"
+            },
+            {
                 "url": "assets/bubble.png",
                 "type": "image",
                 "key": "bubble"
@@ -48,6 +66,11 @@
                 "url": "assets/game-background.png",
                 "type": "image",
                 "key": "game-background"
+            },
+            {
+                "url": "assets/1x/gameover.png",
+                "type": "image",
+                "key": "gameover"
             },
             {
                 "url": "assets/llama.png",

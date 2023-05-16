@@ -79,6 +79,9 @@ export default class GameplayScript extends ScriptNode {
 	return parseInt(highScoreString, 10);
 	}
 
+	public getScore(){
+		return Math.floor(this.score);
+	}
 	public updateHighScore() {
 		// Get the current high score
 		const currentHighScore = this.getHighScore();

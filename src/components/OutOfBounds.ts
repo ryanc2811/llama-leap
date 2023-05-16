@@ -36,14 +36,14 @@ export default class OutOfBounds {
 			this.gameObject.emit('outOfBounds', this.gameObject);
 			this.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);
 		}
-	
+
 		if(this.gameObject.y-this.gameObject.displayHeight > this.scene.scale.height){
 			this.gameObject.emit('outOfBounds', this.gameObject);
 			this.scene.events.off(Phaser.Scenes.Events.UPDATE, this.update, this);
 			console.log("BYE");
 		}
 	}
-	
+
 	reset() {
 		this.scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
 		this.gameObject.once('destroy', this.onDestroy, this);

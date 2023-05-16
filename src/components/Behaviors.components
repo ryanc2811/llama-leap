@@ -11,6 +11,105 @@
             "baseClass": "",
             "gameObjectType": "Phaser.GameObjects.Sprite",
             "properties": []
+        },
+        {
+            "name": "ButtonComponent",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": [
+                {
+                    "name": "_enabled",
+                    "label": "Enabled",
+                    "tooltip": "Enabled state for button",
+                    "defValue": true,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "boolean"
+                    }
+                },
+                {
+                    "name": "disabledFrame",
+                    "label": "Disabled Frame",
+                    "tooltip": "image for button being disabled",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                },
+                {
+                    "name": "normFrame",
+                    "label": "Norm Frame",
+                    "tooltip": "image for button up state",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                },
+                {
+                    "name": "overFrame",
+                    "label": "Over Frame",
+                    "tooltip": "image for hovering state",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                },
+                {
+                    "name": "downFrame",
+                    "label": "Down Frame",
+                    "tooltip": "Image for button down state",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                },
+                {
+                    "name": "pressedSoundKey",
+                    "label": "Pressed Sound Key",
+                    "tooltip": "Sound for button pressed",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "audio-key"
+                    }
+                },
+                {
+                    "name": "downSoundKey",
+                    "label": "Down Sound Key",
+                    "tooltip": "sound for button first down",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "audio-key"
+                    }
+                },
+                {
+                    "name": "callback",
+                    "label": "Callback Function",
+                    "tooltip": "Callback for button pressed",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "expression",
+                        "expressionType": "(...args: any[]) => void"
+                    }
+                },
+                {
+                    "name": "context",
+                    "label": "Callback Context",
+                    "tooltip": "Context object for callback function",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "expression",
+                        "expressionType": "any"
+                    }
+                }
+            ]
         }
     ],
     "meta": {

@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "btn_restart_atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 144,
+				"h": 578
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "btn_restart_hover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 143
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 143
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 142,
+						"h": 143
+					}
+				},
+				{
+					"filename": "btn_restart_norm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 143
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 143
+					},
+					"frame": {
+						"x": 1,
+						"y": 146,
+						"w": 142,
+						"h": 143
+					}
+				},
+				{
+					"filename": "btn_restart_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 142
+					},
+					"frame": {
+						"x": 1,
+						"y": 291,
+						"w": 142,
+						"h": 142
+					}
+				},
+				{
+					"filename": "btn_restart_down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 142,
+						"h": 142
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 142,
+						"h": 142
+					},
+					"frame": {
+						"x": 1,
+						"y": 435,
+						"w": 142,
+						"h": 142
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:987157301bf41df5efbae2e5b4dc65c3:6c9eb98ffed512d825b5707d742959fa:2b29480ec97a894343baa24267a35468$"
+	}
+}
