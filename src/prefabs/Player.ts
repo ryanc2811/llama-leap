@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
+import ShieldComponent from "../components/ShieldComponent";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -36,11 +37,19 @@ export default class Player extends Phaser.GameObjects.Sprite {
 
 	/* START-USER-CODE */
 	private inputHeld:boolean=false;
-	private playerVsEnemy(player: any, enemy: any): void {
 
-		//(enemy as Bird).onCollide();
+	public shrink(){
+		this.setScale(.25);
+		ShieldComponent.getComponent(this).scale(1);
 	}
+	public expand(){
+		this.setScale(.5);
+		ShieldComponent.getComponent(this).scale(2);
+	}
+	public handleCollision(enemy: any): void {
 
+		
+	}
 
 	/* END-USER-CODE */
 }

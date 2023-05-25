@@ -4,6 +4,7 @@
     "settings": {
         "snapEnabled": true,
         "snapWidth": 2,
+        "snapHeight": 2,
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
@@ -81,12 +82,13 @@
             "ButtonComponent.normFrame": "btn_leaderboard_norm.png",
             "ButtonComponent.overFrame": "btn_leaderboard_hover.png",
             "ButtonComponent.downFrame": "btn_leaderboard_down.png",
+            "ButtonComponent.callback": "this.leaderboard.bind(this);",
             "ButtonComponent.context": "this",
             "texture": {
                 "key": "btn_leaderboard_atlas",
                 "frame": "btn_leaderboard_norm.png"
             },
-            "x": 182,
+            "x": 186,
             "y": 928,
             "list": []
         },
@@ -102,6 +104,7 @@
             "ButtonComponent.normFrame": "btn_menu_norm.png",
             "ButtonComponent.overFrame": "btn_menu_hover.png",
             "ButtonComponent.downFrame": "btn_menu_down.png",
+            "ButtonComponent.callback": "this.mainMenu.bind(this);",
             "ButtonComponent.context": "this",
             "texture": {
                 "key": "btn_menu_atlas",
@@ -109,6 +112,94 @@
             },
             "x": 534,
             "y": 928,
+            "list": []
+        },
+        {
+            "type": "Text",
+            "id": "b2867527-4bf3-4123-96e7-89c8c53fe8c9",
+            "label": "scoreTxt",
+            "scope": "CLASS",
+            "components": [],
+            "x": 404,
+            "y": 648,
+            "text": "0",
+            "fontFamily": "Lato",
+            "fontSize": "32px",
+            "fontStyle": "bold",
+            "strokeThickness": 2,
+            "list": []
+        },
+        {
+            "type": "Text",
+            "id": "39bafb8f-9bef-4d16-8fbc-365ce451c88f",
+            "label": "highScoreTxt",
+            "scope": "CLASS",
+            "components": [],
+            "x": 404,
+            "y": 724,
+            "text": "0",
+            "fontFamily": "Lato",
+            "fontSize": "32px",
+            "fontStyle": "bold",
+            "strokeThickness": 2,
+            "list": []
+        },
+        {
+            "type": "Text",
+            "id": "fd1847c9-82ce-4035-a7d1-b3585c717876",
+            "label": "rankTxt",
+            "scope": "CLASS",
+            "components": [],
+            "x": 404,
+            "y": 794,
+            "text": "0",
+            "fontFamily": "Lato",
+            "fontSize": "32px",
+            "fontStyle": "bold",
+            "strokeThickness": 2,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "faa28742-c3b3-44d8-9acb-d89782517a0f",
+            "label": "scoreCoin",
+            "components": [],
+            "texture": {
+                "key": "coin"
+            },
+            "x": 368,
+            "y": 668,
+            "scaleX": 0.2,
+            "scaleY": 0.2,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "9fc51833-5f66-41b6-b432-e0c50b35eaf2",
+            "label": "highscoreCoin",
+            "components": [],
+            "texture": {
+                "key": "coin"
+            },
+            "x": 368,
+            "y": 742,
+            "scaleX": 0.2,
+            "scaleY": 0.2,
+            "list": []
+        },
+        {
+            "type": "Text",
+            "id": "5eb601ae-1b4b-46fb-be16-fd95c5a66953",
+            "label": "rank#Txt",
+            "components": [],
+            "x": 368,
+            "y": 812,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "#",
+            "fontFamily": "Lato",
+            "fontSize": "32px",
+            "strokeThickness": 1,
             "list": []
         }
     ],

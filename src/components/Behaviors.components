@@ -110,6 +110,102 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "DoublePointsBehaviour",
+            "baseClass": "PickupBehaviour",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": []
+        },
+        {
+            "name": "CoinBehaviour",
+            "baseClass": "PickupBehaviour",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": [
+                {
+                    "name": "scoreIncrease",
+                    "label": "Score Increase Value",
+                    "tooltip": "How much to increase score",
+                    "defValue": 100,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Magnetism",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": [
+                {
+                    "name": "defaultPullForce",
+                    "label": "Default Pull Force",
+                    "tooltip": "Force at which object pulls items",
+                    "defValue": 500,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "defaultAttractionDistance",
+                    "label": "Default Attraction Distance",
+                    "tooltip": "Distance at which items will pull towards object",
+                    "defValue": 250,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
+                    }
+                },
+                {
+                    "name": "pickupsLayer",
+                    "label": "Pickups Layer",
+                    "tooltip": "",
+                    "defValue": "",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "constructor",
+                        "expressionType": "Phaser.GameObjects.Layer"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "MagnetBehaviour",
+            "baseClass": "PickupBehaviour",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": []
+        },
+        {
+            "name": "ShieldBehaviour",
+            "baseClass": "PickupBehaviour",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": []
+        },
+        {
+            "name": "ShieldComponent",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": [
+                {
+                    "name": "shieldTexture",
+                    "label": "Shield Texture",
+                    "tooltip": "The texture of the Shield",
+                    "defValue": "bubble",
+                    "customDefinition": false,
+                    "type": {
+                        "id": "string"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "ShrinkBehaviour",
+            "baseClass": "PickupBehaviour",
+            "gameObjectType": "Phaser.GameObjects.Sprite",
+            "properties": []
         }
     ],
     "meta": {

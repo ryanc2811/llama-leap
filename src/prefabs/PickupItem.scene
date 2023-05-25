@@ -48,6 +48,16 @@
             "type": {
                 "id": "number"
             }
+        },
+        {
+            "name": "pickupType",
+            "label": "Pickup Type",
+            "tooltip": "Type of pickup item",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "string"
+            }
         }
     ]
 }

@@ -5,7 +5,7 @@
 
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
-import PickupBehaviour from "../script-nodes/PickupBehaviour";
+import PickupBehaviour from "../components/PickupBehaviour";
 import Player from "./Player";
 /* END-USER-IMPORTS */
 
@@ -32,6 +32,7 @@ export default class PickupItem extends Phaser.GameObjects.Sprite {
 	}
 
 	public speed: number = -100;
+	public pickupType: string = "";
 
 	/* START-USER-CODE */
 
@@ -48,10 +49,15 @@ export default class PickupItem extends Phaser.GameObjects.Sprite {
 	}
   onPickup(player: Player): void {
     if (this.behaviour) {
-      this.behaviour.onPickup(player, this);
+      this.behaviour.onPickup(player);
+	  this.emit('destroyed', this);
     }
   }
 
+  reset(){
+	this.body.setVelocityX(this.speed);
+	this.body.setVelocityY(0);
+  }
 	/* END-USER-CODE */
 }
 

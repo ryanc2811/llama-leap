@@ -1,6 +1,6 @@
 import GameplayScript from "../script-nodes/GameplayScript";
 import PickupItem from "../prefabs/PickupItem";
-import PickupBehaviour from "../script-nodes/PickupBehaviour";
+import PickupBehaviour from "../components/PickupBehaviour";
 export class PickupFactory {
   constructor(private scene: Phaser.Scene, private gameManager:GameplayScript) {
   }
@@ -20,7 +20,8 @@ export class PickupFactory {
     behaviourClass: new (...args: any[]) => T
   ): void {
     pickup.setTexture(texture);
-    const behaviour = new behaviourClass(pickup, this.gameManager);
+    const behaviour = new behaviourClass(pickup);
+    behaviour.gameplayScript=this.gameManager;
     pickup.attachBehaviour(behaviour);
   }
 }

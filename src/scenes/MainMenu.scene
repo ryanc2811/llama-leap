@@ -13,54 +13,59 @@
     },
     "displayList": [
         {
-            "type": "Text",
-            "id": "9822f70f-9771-41e2-9d19-81bdb0189869",
-            "label": "title",
+            "type": "Layer",
+            "id": "1ee4bc5c-f129-4fb3-9ed4-d2d4ad755c4f",
+            "label": "background",
             "components": [],
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "2585f438-ee43-4db8-98f0-65c3a6cd8b10",
+                    "label": "backgroundImg",
+                    "components": [],
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#F5F5F5",
+                    "width": 720,
+                    "height": 1280,
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "77c01a91-fa46-432a-8576-0ba77d21da88",
+            "label": "main-screen",
+            "components": [],
+            "texture": {
+                "key": "main-menu"
+            },
             "x": 360,
-            "y": 403,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Llama Leap",
-            "fontFamily": "Lato",
-            "fontSize": "120px",
+            "y": 640,
             "list": []
         },
         {
-            "type": "Text",
-            "id": "50c657de-1dfe-4ee8-8168-245cc4719967",
-            "label": "start_button",
-            "components": [],
-            "x": 376,
-            "y": 713,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Play",
-            "fontFamily": "Lato",
-            "fontSize": "120px",
-            "list": [
-                {
-                    "prefabId": "a06ed60b-79f1-4444-bf35-89046f71f954",
-                    "id": "a761502c-ccdc-4914-a987-12b28b59fed1",
-                    "label": "onPointerDownScript",
-                    "components": [],
-                    "nestedPrefabs": [],
-                    "list": [
-                        {
-                            "prefabId": "2d3f9249-6fcd-4c7d-bd2f-77fa616af7e8",
-                            "id": "06d87729-26e0-44a4-8605-a605d86a1e80",
-                            "unlock": [
-                                "sceneKey"
-                            ],
-                            "label": "startSceneActionScript",
-                            "sceneKey": "Preload",
-                            "components": [],
-                            "nestedPrefabs": [],
-                            "list": []
-                        }
-                    ]
-                }
-            ]
+            "type": "Image",
+            "id": "453bdf5f-2831-424d-9486-f3dcd998d607",
+            "label": "btn_play",
+            "scope": "CLASS",
+            "components": [
+                "ButtonComponent"
+            ],
+            "ButtonComponent.disabledFrame": "btn_play_disabled.png",
+            "ButtonComponent.normFrame": "btn_play_norm.png",
+            "ButtonComponent.overFrame": "btn_play_hover.png",
+            "ButtonComponent.downFrame": "btn_play_down.png",
+            "ButtonComponent.callback": "this.startGame.bind(this)",
+            "ButtonComponent.context": "this",
+            "texture": {
+                "key": "btn_play_atlas",
+                "frame": "btn_play_norm.png"
+            },
+            "x": 360,
+            "y": 1036,
+            "list": []
         }
     ],
     "plainObjects": [],

@@ -26,6 +26,12 @@
             },
             {
                 "type": "multiatlas",
+                "url": "assets/buttons/btn_exit_atlas.json",
+                "path": "assets/buttons",
+                "key": "btn_exit_atlas"
+            },
+            {
+                "type": "multiatlas",
                 "url": "assets/buttons/btn_leaderboard_atlas.json",
                 "path": "assets/buttons",
                 "key": "btn_leaderboard_atlas"
@@ -53,9 +59,24 @@
                 "key": "coin"
             },
             {
+                "url": "assets/1x/coin-plus.png",
+                "type": "image",
+                "key": "coin-plus"
+            },
+            {
+                "url": "assets/1x/coin-top-bar.png",
+                "type": "image",
+                "key": "coin-top-bar"
+            },
+            {
                 "url": "assets/double_points.png",
                 "type": "image",
                 "key": "double_points"
+            },
+            {
+                "url": "assets/1x/double_points_ui.png",
+                "type": "image",
+                "key": "double_points_ui"
             },
             {
                 "url": "assets/FufuSuperDino.png",
@@ -73,6 +94,11 @@
                 "key": "gameover"
             },
             {
+                "url": "assets/1x/leaderboard-menu.png",
+                "type": "image",
+                "key": "leaderboard-menu"
+            },
+            {
                 "url": "assets/llama.png",
                 "type": "image",
                 "key": "llama"
@@ -83,14 +109,55 @@
                 "key": "magnet"
             },
             {
+                "url": "assets/1x/magnet_ui.png",
+                "type": "image",
+                "key": "magnet_ui"
+            },
+            {
                 "url": "assets/pencil.png",
                 "type": "image",
                 "key": "pencil"
             },
             {
+                "atlasURL": "assets/1x/plus_atlas.json",
+                "textureURL": "assets/1x/plus_atlas.png",
+                "type": "atlas",
+                "key": "plus_atlas"
+            },
+            {
+                "url": "assets/1x/power-up-active-background.png",
+                "type": "image",
+                "key": "power-up-active-background"
+            },
+            {
                 "url": "assets/shield.png",
                 "type": "image",
                 "key": "shield"
+            },
+            {
+                "url": "assets/1x/shield_ui.png",
+                "type": "image",
+                "key": "shield_ui"
+            },
+            {
+                "url": "assets/shrink.png",
+                "type": "image",
+                "key": "shrink"
+            },
+            {
+                "url": "assets/1x/shrink_ui.png",
+                "type": "image",
+                "key": "shrink_ui"
+            },
+            {
+                "url": "assets/1x/top-bar.png",
+                "type": "image",
+                "key": "top-bar"
+            },
+            {
+                "url": "assets/1x/user-leaderboard-container.png",
+                "type": "image",
+                "key": "user-leaderboard-container"
             }
         ]
     },

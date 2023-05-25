@@ -3,9 +3,11 @@
 
 /* START OF COMPILED CODE */
 
+
 import Enemy from "./Enemy";
 /* START-USER-IMPORTS */
 import Player from "./Player";
+import ShieldComponent from "../components/ShieldComponent";
 /* END-USER-IMPORTS */
 
 export default class Bird extends Enemy {
@@ -40,7 +42,7 @@ export default class Bird extends Enemy {
 		// sound
 	}
 	public handleCollision(other:any){
-		console.log('Bird collision with', other);
+		
 		if(other instanceof Enemy){
 			const pencil= other as Enemy;
 			if (pencil.body.velocity.y>500) {
@@ -53,7 +55,15 @@ export default class Bird extends Enemy {
 		}
 
 		if(other instanceof Player){
+			const shieldComponent= ShieldComponent.getComponent(other);
+		if(shieldComponent.isShieldActive()){
+			shieldComponent.setShieldActive(false);
+			this.emit('destroyed', this);
+			
+		}else{
 			this.scene.events.emit('gameOver');
+		}
+			
 		}
 
 

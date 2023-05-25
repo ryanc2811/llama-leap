@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "btn_exit_atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 182,
+				"h": 414
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "btn_exit_hover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 106
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 106
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 180,
+						"h": 106
+					}
+				},
+				{
+					"filename": "btn_exit_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 105
+					},
+					"frame": {
+						"x": 1,
+						"y": 109,
+						"w": 180,
+						"h": 105
+					}
+				},
+				{
+					"filename": "btn_exit_norm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 180,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 180,
+						"h": 105
+					},
+					"frame": {
+						"x": 1,
+						"y": 216,
+						"w": 180,
+						"h": 105
+					}
+				},
+				{
+					"filename": "btn_exit_down.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 180,
+						"h": 105
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 15,
+						"w": 180,
+						"h": 90
+					},
+					"frame": {
+						"x": 1,
+						"y": 323,
+						"w": 180,
+						"h": 90
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:95b7ef44968e501188c7f265aedfb4ed:d6a06057121409d0e0bf66111ee7d77e:72ae9e78e49ecbe4906dfa98e0934edd$"
+	}
+}

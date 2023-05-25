@@ -4,8 +4,7 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import OnPointerDownScript from "../script-nodes-basic/OnPointerDownScript";
-import StartSceneActionScript from "../script-nodes-basic/StartSceneActionScript";
+import ButtonComponent from "../components/ButtonComponent";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -21,38 +20,52 @@ export default class MainMenu extends Phaser.Scene {
 
 	editorCreate(): void {
 
-		// title
-		const title = this.add.text(360, 403, "", {});
-		title.setOrigin(0.5, 0.5);
-		title.text = "Llama Leap";
-		title.setStyle({ "fontFamily": "Lato", "fontSize": "120px" });
+		// background
+		const background = this.add.layer();
 
-		// start_button
-		const start_button = this.add.text(376, 713, "", {});
-		start_button.setOrigin(0.5, 0.5);
-		start_button.text = "Play";
-		start_button.setStyle({ "fontFamily": "Lato", "fontSize": "120px" });
+		// backgroundImg
+		const backgroundImg = this.add.rectangle(0, 0, 720, 1280);
+		backgroundImg.setOrigin(0, 0);
+		backgroundImg.isFilled = true;
+		backgroundImg.fillColor = 16119285;
+		background.add(backgroundImg);
 
-		// onPointerDownScript
-		const onPointerDownScript = new OnPointerDownScript(start_button);
+		// main-screen
+		this.add.image(360, 640, "main-menu");
 
-		// startSceneActionScript
-		const startSceneActionScript = new StartSceneActionScript(onPointerDownScript);
+		// btn_play
+		const btn_play = this.add.image(360, 1036, "btn_play_atlas", "btn_play_norm.png");
 
-		// startSceneActionScript (prefab fields)
-		startSceneActionScript.sceneKey = "Preload";
+		// btn_play (components)
+		const btn_playButtonComponent = new ButtonComponent(btn_play);
+		btn_playButtonComponent.disabledFrame = "btn_play_disabled.png";
+		btn_playButtonComponent.normFrame = "btn_play_norm.png";
+		btn_playButtonComponent.overFrame = "btn_play_hover.png";
+		btn_playButtonComponent.downFrame = "btn_play_down.png";
+		btn_playButtonComponent.callback = this.startGame.bind(this);
+		btn_playButtonComponent.context = this;
+
+		this.btn_play = btn_play;
 
 		this.events.emit("scene-awake");
 	}
+
+	private btn_play!: Phaser.GameObjects.Image;
 
 	/* START-USER-CODE */
 
 	// Write your code here
 
 	create() {
+
 		this.editorCreate();
+
+		this.btn_play.setInteractive();
 	}
 
+	startGame(){
+		this.scene.start('Preload');  
+	}
 	/* END-USER-CODE */
 }
 

@@ -4,6 +4,7 @@ import MainMenu from "./scenes/MainMenu";
 import preloadAssetPackUrl from "../static/assets/preload-asset-pack.json";
 import Preload from "./scenes/Preload";
 import GameOver from "./scenes/GameOver";
+import Leaderboard from "./scenes/Leaderboard";
 
 
 class Boot extends Phaser.Scene {
@@ -14,11 +15,12 @@ class Boot extends Phaser.Scene {
 
     preload() {
 
+		
         this.load.pack("pack", preloadAssetPackUrl);
     }
 
     create() {
-
+		
        this.scene.start("MainMenu");
     }
 }
@@ -40,7 +42,7 @@ window.addEventListener('load', function () {
 				}
 			}
 		},
-		scene: [Boot, Preload,MainMenu, Level,GameOver]
+		scene: [Boot, Preload,MainMenu, Level,GameOver, Leaderboard]
 	});
 
 	game.scene.start("Boot");

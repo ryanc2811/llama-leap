@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "btn_play_atlas.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 812,
+				"h": 203
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "btn_play_disabled.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 201,
+						"h": 201
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 201,
+						"h": 201
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 201,
+						"h": 201
+					}
+				},
+				{
+					"filename": "btn_play_down.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 201,
+						"h": 201
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 201,
+						"h": 201
+					},
+					"frame": {
+						"x": 204,
+						"y": 1,
+						"w": 201,
+						"h": 201
+					}
+				},
+				{
+					"filename": "btn_play_hover.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 201,
+						"h": 201
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 201,
+						"h": 201
+					},
+					"frame": {
+						"x": 407,
+						"y": 1,
+						"w": 201,
+						"h": 201
+					}
+				},
+				{
+					"filename": "btn_play_norm.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 201,
+						"h": 201
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 201,
+						"h": 201
+					},
+					"frame": {
+						"x": 610,
+						"y": 1,
+						"w": 201,
+						"h": 201
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:266e2870f4511ccfda213cfc96af5a2c:251d38a14ac1c4bf92bec24bae731e35:0550c24f11718402912d03285d239e81$"
+	}
+}

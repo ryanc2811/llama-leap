@@ -49,6 +49,83 @@
                 "id": "object-var",
                 "expressionType": "Phaser.GameObjects.Text"
             }
+        },
+        {
+            "name": "doublePointsSlot",
+            "label": "Double Points Timer Image",
+            "tooltip": "The Image for double points powerup",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Image"
+            }
+        },
+        {
+            "name": "powerupTimerLayer",
+            "label": "Power up Timers Layer",
+            "tooltip": "Layer for timers",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Container"
+            }
+        },
+        {
+            "name": "player",
+            "label": "Player",
+            "tooltip": "The Player Object",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Player"
+            }
+        },
+        {
+            "name": "magnetSlot",
+            "label": "Magnet Slot",
+            "tooltip": "Image for Magnet Timer Powerup slot",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Image"
+            }
+        },
+        {
+            "name": "shieldSlot",
+            "label": "Shield Timer Slot",
+            "tooltip": "Image for Shield Timer Slot",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Image"
+            }
+        },
+        {
+            "name": "shrinkSlot",
+            "label": "Shrink Timer Slot",
+            "tooltip": "Image for Shrink Timer Slot",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Image"
+            }
+        },
+        {
+            "name": "coinplus",
+            "label": "Coin Plus",
+            "tooltip": "Image for coin plus",
+            "defValue": "",
+            "customDefinition": false,
+            "type": {
+                "id": "object-var",
+                "expressionType": "Phaser.GameObjects.Sprite"
+            }
         }
     ]
 }

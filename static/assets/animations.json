@@ -57,6 +57,47 @@
             "skipMissedFrames": true,
             "repeat": -1,
             "showBeforeDelay": false
+        },
+        {
+            "key": "coin-plus",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "plus_atlas",
+                    "frame": "plus-1.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "plus_atlas",
+                    "frame": "plus-2.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "plus_atlas",
+                    "frame": "plus-3.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "plus_atlas",
+                    "frame": "plus-4.png",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "plus_atlas",
+                    "frame": "plus-5.png",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 16,
+            "skipMissedFrames": true,
+            "delay": 1,
+            "yoyo": true,
+            "showBeforeDelay": false
         }
     ],
     "globalTimeScale": 1,

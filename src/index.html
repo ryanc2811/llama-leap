@@ -16,6 +16,24 @@
 </head>
 
 <body>
+    <div id="form-container" style="display: none; position: absolute; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); align-items: center; justify-content: center;">
+    <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        value={email}
+        
+        required
+      />
+      <input
+        type="text"
+        value={username}
+        
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+</div>
+
 </body>
 
 </html>

@@ -14,46 +14,20 @@
     "displayList": [
         {
             "type": "Layer",
-            "id": "94a86849-52c4-4a5e-abe7-7d9131c6a57e",
-            "label": "uiLayer",
+            "id": "e30b98a9-c9e7-4cc7-8d71-1712be73237d",
+            "label": "background",
             "components": [],
             "list": [
                 {
                     "type": "Image",
-                    "id": "64fca6f0-c5d1-49a6-8631-f2fd1762526c",
-                    "label": "background",
+                    "id": "b219881a-37e5-4b17-aacc-85b69a73af74",
+                    "label": "backgroundImg",
                     "components": [],
                     "texture": {
-                        "key": "game-background"
+                        "key": "background"
                     },
-                    "x": 371,
-                    "y": 646,
-                    "list": []
-                },
-                {
-                    "type": "Text",
-                    "id": "0d0e2734-ad3a-4855-94d9-df16f3771066",
-                    "label": "scoreTxt",
-                    "components": [],
-                    "x": 89,
-                    "y": 47,
-                    "text": "Score : 0",
-                    "fontFamily": "Lato",
-                    "fontSize": "32px",
-                    "color": "#2a2626ff",
-                    "list": []
-                },
-                {
-                    "type": "Text",
-                    "id": "b585397d-66c4-4d8c-acd9-16d012ac87ec",
-                    "label": "highScoreTxt",
-                    "components": [],
-                    "x": 430,
-                    "y": 47,
-                    "text": "High Score : 0",
-                    "fontFamily": "Lato",
-                    "fontSize": "32px",
-                    "color": "#2a2626ff",
+                    "originX": 0,
+                    "originY": 0,
                     "list": []
                 }
             ]
@@ -73,15 +47,19 @@
             "unlock": [
                 "x",
                 "y",
-                "mass"
+                "mass",
+                "collideWorldBounds"
             ],
             "label": "player",
             "scope": "CLASS",
             "components": [
-                "Movement"
+                "Movement",
+                "Magnetism",
+                "ShieldComponent"
             ],
             "x": 385,
             "y": 1164,
+            "collideWorldBounds": true,
             "mass": 1,
             "nestedPrefabs": [],
             "list": []
@@ -95,16 +73,182 @@
             "list": []
         },
         {
+            "type": "Layer",
+            "id": "94a86849-52c4-4a5e-abe7-7d9131c6a57e",
+            "label": "uiLayer",
+            "scope": "CLASS",
+            "components": [],
+            "list": [
+                {
+                    "type": "Text",
+                    "id": "b585397d-66c4-4d8c-acd9-16d012ac87ec",
+                    "label": "highScoreTxt",
+                    "components": [],
+                    "x": 430,
+                    "y": 47,
+                    "text": "High Score : 0",
+                    "fontFamily": "Lato",
+                    "fontSize": "32px",
+                    "color": "#2a2626ff",
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "7b142e00-91ca-4048-a6bd-30f38a86cd7c",
+                    "label": "topbar",
+                    "components": [],
+                    "texture": {
+                        "key": "top-bar"
+                    },
+                    "x": -16,
+                    "y": -16,
+                    "originX": 0,
+                    "originY": 0,
+                    "list": []
+                },
+                {
+                    "type": "RoundedRectangleGraphics",
+                    "id": "8c0d7389-8f17-4d7c-a74d-67ad7ceb400b",
+                    "label": "roundedrectanglegraphics_1",
+                    "components": [],
+                    "x": 188,
+                    "y": 60,
+                    "width": 250,
+                    "height": 50,
+                    "isStroked": false,
+                    "list": []
+                },
+                {
+                    "type": "Sprite",
+                    "id": "5c2170a5-1267-4b9c-9d47-7bb6b4a985a0",
+                    "label": "coinplus",
+                    "components": [],
+                    "texture": {
+                        "key": "plus_atlas",
+                        "frame": "plus-1.png"
+                    },
+                    "x": 296,
+                    "y": 60,
+                    "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "c50db952-5280-428a-8ba7-c1afc0d3a195",
+                    "label": "coin-topbar",
+                    "components": [],
+                    "texture": {
+                        "key": "coin-top-bar"
+                    },
+                    "x": 68,
+                    "y": 64,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "0d0e2734-ad3a-4855-94d9-df16f3771066",
+                    "label": "scoreTxt",
+                    "components": [],
+                    "x": 114,
+                    "y": 41,
+                    "text": "99999999",
+                    "fontFamily": "Lato",
+                    "fontSize": "32px",
+                    "fontStyle": "bold",
+                    "color": "#212F60",
+                    "strokeThickness": 2,
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "f304b935-3ce3-41b1-9f38-c401761bd043",
+                    "label": "powerupTimerLayer",
+                    "components": [],
+                    "list": []
+                },
+                {
+                    "type": "Container",
+                    "id": "acc5422d-1828-409d-b580-fe0704b4350a",
+                    "label": "powerupImageLayer",
+                    "components": [],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "24229dc4-3939-44a8-96be-f0d2eba4cf3a",
+                            "label": "powerupSlot1",
+                            "components": [],
+                            "texture": {
+                                "key": "double_points_ui"
+                            },
+                            "x": 400,
+                            "y": 60,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "21a70808-711b-4be5-8c68-d7bec407bf2e",
+                            "label": "powerupSlot2",
+                            "components": [],
+                            "texture": {
+                                "key": "shield_ui"
+                            },
+                            "x": 480,
+                            "y": 60,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "7b697d1c-15b5-422f-ab16-615927b0b25e",
+                            "label": "powerupSlot3",
+                            "components": [],
+                            "texture": {
+                                "key": "magnet_ui"
+                            },
+                            "x": 560,
+                            "y": 60,
+                            "list": []
+                        },
+                        {
+                            "type": "Image",
+                            "id": "941b9ca5-8cd0-4bcf-b7ed-0b9f6054b0f1",
+                            "label": "powerupSlot4",
+                            "components": [],
+                            "texture": {
+                                "key": "shrink_ui"
+                            },
+                            "x": 640,
+                            "y": 60,
+                            "list": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "prefabId": "277de064-af80-4c6d-8ff2-7d5482fab56f",
             "id": "7a5552f2-c56d-47a2-970f-978abd58c9b1",
             "unlock": [
                 "scoreTxt",
-                "highScoreTxt"
+                "highScoreTxt",
+                "doublePointsSlot",
+                "powerupTimerLayer",
+                "player",
+                "magnetSlot",
+                "shieldSlot",
+                "shrinkSlot",
+                "coin-plus",
+                "coinplus"
             ],
             "label": "gameplayScript",
             "scope": "CLASS",
             "scoreTxt": "scoreTxt",
             "highScoreTxt": "highScoreTxt",
+            "doublePointsSlot": "powerupSlot1",
+            "powerupTimerLayer": "powerupTimerLayer",
+            "player": "player",
+            "magnetSlot": "powerupSlot3",
+            "shieldSlot": "powerupSlot2",
+            "shrinkSlot": "powerupSlot4",
+            "coinplus": "coinplus",
             "components": [],
             "nestedPrefabs": [],
             "list": []

@@ -1,0 +1,117 @@
+{
+    "id": "500ac08c-f323-4913-a8c7-599bc856b2d0",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Leaderboard",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 720,
+        "borderHeight": 1280
+    },
+    "displayList": [
+        {
+            "type": "Layer",
+            "id": "bb87efb5-476e-47d8-8919-b9e20bff8d62",
+            "label": "background",
+            "components": [],
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "d8bd3b67-e115-4c9d-8255-4aeaad456bf7",
+                    "label": "backgroundImg",
+                    "components": [],
+                    "originX": 0,
+                    "originY": 0,
+                    "isFilled": true,
+                    "fillColor": "#F5F5F5",
+                    "width": 720,
+                    "height": 1280,
+                    "list": []
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "id": "f711f1cc-39e5-4e75-933c-332c7d3f0445",
+            "label": "leaderboard-menu",
+            "components": [],
+            "texture": {
+                "key": "leaderboard-menu"
+            },
+            "x": 360,
+            "y": 640,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "7801573f-eebd-449d-a783-f4b7d4bb9564",
+            "label": "btn_exit",
+            "scope": "CLASS",
+            "components": [
+                "ButtonComponent"
+            ],
+            "ButtonComponent.disabledFrame": "btn_exit_disabled.png",
+            "ButtonComponent.normFrame": "btn_exit_norm.png",
+            "ButtonComponent.overFrame": "btn_exit_hover.png",
+            "ButtonComponent.downFrame": "btn_exit_down.png",
+            "ButtonComponent.callback": "this.gameOver.bind(this)",
+            "ButtonComponent.context": "this",
+            "texture": {
+                "key": "btn_exit_atlas",
+                "frame": "btn_exit_norm.png"
+            },
+            "x": 360,
+            "y": 1015,
+            "list": []
+        },
+        {
+            "type": "Text",
+            "id": "2fd8ad44-025f-4baa-8b83-4396b1214d6a",
+            "label": "userScoreTxt",
+            "scope": "CLASS",
+            "components": [],
+            "x": 519,
+            "y": 293,
+            "originX": 1,
+            "text": "99999999999",
+            "fixedWidth": 200,
+            "align": "right",
+            "fontFamily": "Lato",
+            "fontSize": "30px",
+            "fontStyle": "bold",
+            "color": "#212F60",
+            "list": []
+        },
+        {
+            "type": "Text",
+            "id": "78310cd6-5969-4817-9cf0-0bc2e7444b45",
+            "label": "userRankTxt",
+            "components": [],
+            "x": 128,
+            "y": 293,
+            "text": "1.",
+            "fixedWidth": 40,
+            "fontFamily": "Lato",
+            "fontSize": "30px",
+            "fontStyle": "bold",
+            "color": "#212F60",
+            "list": []
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "lists": [
+        {
+            "id": "0675a53a-b6aa-4f88-9eff-31ecd5eb0d4e",
+            "label": "leaderboardContainers"
+        }
+    ]
+}

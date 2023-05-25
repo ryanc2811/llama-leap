@@ -2,9 +2,20 @@
     "section1": {
         "files": [
             {
+                "type": "multiatlas",
+                "url": "assets/buttons/btn_play_atlas.json",
+                "path": "assets/buttons",
+                "key": "btn_play_atlas"
+            },
+            {
                 "url": "assets/llama.png",
                 "type": "image",
                 "key": "llama"
+            },
+            {
+                "url": "assets/1x/main-menu.png",
+                "type": "image",
+                "key": "main-menu"
             }
         ]
     },

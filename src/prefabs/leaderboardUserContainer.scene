@@ -1,0 +1,98 @@
+{
+    "id": "ae440b2c-7ef5-4422-a693-9e2a387471dc",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 720,
+        "borderHeight": 1280
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "09d23fb7-35cf-4cef-9111-8e2aecf87403",
+            "label": "lbUserContainer",
+            "components": [],
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "8cede711-d824-4490-bb39-7b96e199d73e",
+                    "label": "lbContainerBackground",
+                    "components": [],
+                    "texture": {
+                        "key": "user-leaderboard-container"
+                    },
+                    "x": 232,
+                    "y": 17,
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "7460982a-d292-469c-89ce-3ba8a1ee4115",
+                    "label": "lbRankTxt",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "x": 23,
+                    "y": 16,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "1.",
+                    "fixedWidth": 40,
+                    "fontFamily": "Lato",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#212F60",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "5dca4daf-1cfb-431f-bdb8-cbb2eea4b103",
+                    "label": "lbScoreTxt",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "x": 391,
+                    "y": 16,
+                    "originX": 1,
+                    "originY": 0.5,
+                    "text": "99999999999",
+                    "fixedWidth": 200,
+                    "align": "right",
+                    "fontFamily": "Lato",
+                    "fontSize": "30px",
+                    "fontStyle": "bold",
+                    "color": "#ffffffff",
+                    "list": []
+                },
+                {
+                    "type": "Text",
+                    "id": "4caae6c5-c5fe-4430-ba3d-529bd35baae5",
+                    "label": "lbUsernameTxt",
+                    "scope": "PUBLIC",
+                    "components": [],
+                    "x": 120,
+                    "y": 16,
+                    "originX": 0.5,
+                    "originY": 0.5,
+                    "text": "Username",
+                    "fixedWidth": 150,
+                    "fontFamily": "Lato",
+                    "fontSize": "24px",
+                    "fontStyle": "bold",
+                    "color": "#212F60",
+                    "list": []
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
